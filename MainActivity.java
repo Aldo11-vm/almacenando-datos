@@ -1,4 +1,4 @@
-package com.eeag.quintaapp;
+package com.example.application5;
 
 import android.os.Bundle;
 
