@@ -33,12 +33,12 @@ EditText txtNombre, txtTelefono;
     {
         if(txtNombre.getText().toString().equals(""))
         {
-            Toast.makeText(this, "El nombre no puede ir vacio", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "El nombre no puede estar vacio", Toast.LENGTH_SHORT).show();
             return;
         }
         if(txtTelefono.getText().toString().equals(""))
         {
-            Toast.makeText(this, "El telefono no puede ir vacio", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "El telefono no puede estar vacio", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -57,7 +57,7 @@ EditText txtNombre, txtTelefono;
 
         if (nombre.equals(""))
         {
-            Toast.makeText(this, "Pirmero  escribe el nombre del contacto que quieres buscar", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Escribe el nombre del contacto que quieres buscar", Toast.LENGTH_SHORT).show();
             return;
         }
         SharedPreferences preferences = getSharedPreferences("contactos", Context.MODE_PRIVATE);
@@ -66,11 +66,11 @@ EditText txtNombre, txtTelefono;
         if (telefono != null)
         {
             txtTelefono.setText(telefono);
-            Toast.makeText(this, "si se encontro", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Se encontro", Toast.LENGTH_SHORT).show();
         }
         else
         {
-            Toast.makeText(this, "no se encontro", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No se encontro", Toast.LENGTH_SHORT).show();
             txtTelefono.setText("");
         }
     }
